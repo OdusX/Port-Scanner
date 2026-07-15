@@ -1,14 +1,21 @@
-# Port Scanner
+# Multi-Threaded Port Scanner
 
-## Description
-A multi-threaded port scanner written in Python for network reconnaissance.
+## 🛡️ Overview
+A high-performance, multi-threaded port scanner written in Python. Designed for rapid network reconnaissance, this tool allows security analysts to quickly map open ports, identify running services, and evaluate network attack surfaces.
 
-## Features
-- Multi-threaded scanning for improved speed
-- Customizable port ranges
-- Clean output formatting
-- Error handling for network issues
+## 🚀 Features
+- **Multi-Threaded Execution**: Leverages Python's `threading` module to scan multiple ports concurrently, significantly reducing scan times.
+- **Dynamic CLI Arguments**: Custom target IP/domain, port ranges, and thread counts passed directly via command-line arguments.
+- **Robust Exception Handling**: Gracefully handles host resolution failures, connection timeouts, and user interrupts (`Ctrl+C`).
+- **Containerized Deployment**: Includes a production-ready `Dockerfile` for easy execution across isolated environments.
 
-## Usage
+## 📦 Installation & Setup
+
+### Prerequisites
+- Python 3.x
+- Docker (Optional, for containerized run)
+
+### Cloning the Repository
 ```bash
-python3 port_scanner.py "ip address"
+git clone [https://github.com/OdusX/Port-Scanner.git](https://github.com/OdusX/Port-Scanner.git)
+cd Port-Scanner
